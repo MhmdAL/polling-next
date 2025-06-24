@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "/poll/create/page": [
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_favicon_ico_mjs_659ce808._.js",
+      "static/chunks/[root-of-the-server]__9d126714._.css",
+      "static/chunks/app_layout_tsx_c0237562._.js",
+      "static/chunks/_943f9aa7._.js",
+      "static/chunks/app_poll_layout_tsx_b2f3bef0._.js",
+      "static/chunks/_d530fa5f._.js",
+      "static/chunks/app_poll_create_page_tsx_0ba0cbdb._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/poll/page": [
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_favicon_ico_mjs_659ce808._.js",
+      "static/chunks/[root-of-the-server]__9d126714._.css",
+      "static/chunks/app_layout_tsx_c0237562._.js",
+      "static/chunks/_943f9aa7._.js",
+      "static/chunks/app_poll_layout_tsx_b2f3bef0._.js",
+      "static/chunks/_e7dd4893._.js",
+      "static/chunks/app_poll_page_tsx_0ba0cbdb._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/poll/submit/[pollId]/page": [
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_favicon_ico_mjs_659ce808._.js",
+      "static/chunks/[root-of-the-server]__9d126714._.css",
+      "static/chunks/app_layout_tsx_c0237562._.js",
+      "static/chunks/_943f9aa7._.js",
+      "static/chunks/app_poll_layout_tsx_b2f3bef0._.js",
+      "static/chunks/_89c970e6._.js",
+      "static/chunks/app_poll_submit_[pollId]_page_tsx_0ba0cbdb._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ]
+  }
+}

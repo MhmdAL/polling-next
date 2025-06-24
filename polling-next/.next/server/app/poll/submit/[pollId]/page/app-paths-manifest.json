@@ -1,0 +1,3 @@
+{
+  "/poll/submit/[pollId]/page": "app/poll/submit/[pollId]/page.js"
+}

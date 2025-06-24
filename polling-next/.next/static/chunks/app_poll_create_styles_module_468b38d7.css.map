@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///S:/Projects/polling-next/polling-next/app/poll/create/styles.module.css"],"sourcesContent":["\r\n.test {\r\n    background-color: red;\r\n}"],"names":[],"mappings":"AACA","debugId":null}}]
+}

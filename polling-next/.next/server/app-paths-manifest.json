@@ -1,0 +1,5 @@
+{
+  "/poll/create/page": "app/poll/create/page.js",
+  "/poll/page": "app/poll/page.js",
+  "/poll/submit/[pollId]/page": "app/poll/submit/[pollId]/page.js"
+}
