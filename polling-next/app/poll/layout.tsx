@@ -10,7 +10,6 @@ export default function RootLayout({
   }>) {
     return (
         <div>
-            <HomeButton></HomeButton>
             {children}
         </div>
     );

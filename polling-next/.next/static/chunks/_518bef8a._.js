@@ -16,7 +16,7 @@ function RootLayout({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/app/poll/layout.tsx",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 9
     }, this);
 }
