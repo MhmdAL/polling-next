@@ -1,8 +1,9 @@
 // lib/api.ts
 
 import { userStorage } from "./userStorage";
+import { config } from "./config";
 
-const API_URL = 'http://localhost:5000';
+const API_URL = config.apiUrl;
 
 export interface Poll {
     id: string;
