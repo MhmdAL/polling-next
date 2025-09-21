@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/poll/page": "/poll",
+  "/poll/create/page": "/poll/create",
+  "/poll/results/[pollId]/page": "/poll/results/[pollId]",
+  "/poll/submit/[pollId]/page": "/poll/submit/[pollId]"
+}
