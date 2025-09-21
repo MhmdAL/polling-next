@@ -9,6 +9,6 @@ services:
       - "443:443"
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_BEE_API_URL=http://34.18.142.59:8080
+      - NEXT_PUBLIC_BEE_API_URL=http://localhost:8080
 
     restart: unless-stopped
