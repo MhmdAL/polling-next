@@ -1,9 +1,4 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/poll/create/page": "app/poll/create/page.js",
-  "/poll/page": "app/poll/page.js",
-  "/poll/results/[pollId]/page": "app/poll/results/[pollId]/page.js",
-  "/poll/submit/[pollId]/page": "app/poll/submit/[pollId]/page.js"
+  "/poll/results/[pollId]/page": "app/poll/results/[pollId]/page.js"
 }
