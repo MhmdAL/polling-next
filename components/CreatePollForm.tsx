@@ -84,8 +84,7 @@ export default function CreatePollForm() {
 
   return (
     <div className="min-h-screen py-8" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      backgroundAttachment: 'fixed'
+      background: '#f97316'
     }}>
       <div className="max-w-2xl mx-auto px-4">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border p-8">
@@ -98,7 +97,7 @@ export default function CreatePollForm() {
                 Poll Question *
               </label>
               <input
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
                 placeholder="What would you like to ask?"
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
@@ -111,7 +110,7 @@ export default function CreatePollForm() {
                 Maximum Selected Options
               </label>
               <input
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
                 placeholder="1"
                 type='number'
                 min={1}
@@ -128,7 +127,7 @@ export default function CreatePollForm() {
               </label>
               <div className="flex gap-2">
                 <input
-                  className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                  className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
                   placeholder="Enter an option..."
                   value={option.name}
                   onChange={(e) => setOption({...option, name: e.target.value})}
@@ -140,7 +139,7 @@ export default function CreatePollForm() {
                   }}
                 />
                 <button
-                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
+                  className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium"
                   onClick={handleAddItem}
                   disabled={!option.name.trim()}
                 >
@@ -182,7 +181,7 @@ export default function CreatePollForm() {
           {/* Create Poll Button */}
           <div className="mt-8 pt-6 border-t">
             <button
-              className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors font-medium text-lg disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium text-lg disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               onClick={handleCreatePoll}
               disabled={!question.trim() || options.length < 2 || isCreating}
             >
@@ -216,9 +215,9 @@ export default function CreatePollForm() {
 
           {/* Poll Created Success with URL */}
           {createdPollId && (
-            <div className="mt-4 p-6 rounded-lg bg-gradient-to-r from-green-50 to-blue-50 border border-green-200">
+            <div className="mt-4 p-6 rounded-lg bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200">
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-green-800 mb-4">🎉 Poll Created Successfully!</h3>
+                <h3 className="text-lg font-semibold text-orange-800 mb-4">🎉 Poll Created Successfully!</h3>
                 
                 <div>
                   <p className="text-sm text-gray-600 mb-3">Share this URL with others to collect responses:</p>
@@ -228,7 +227,7 @@ export default function CreatePollForm() {
                     </code>
                     <button
                       onClick={() => copyToClipboard(`${window.location.origin}/poll/submit/${createdPollId}`, 'Poll URL')}
-                      className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded font-medium transition-colors whitespace-nowrap"
+                      className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded font-medium transition-colors whitespace-nowrap"
                       title="Copy Poll URL"
                     >
                       Copy URL
@@ -239,7 +238,7 @@ export default function CreatePollForm() {
                 <div className="mt-4 flex gap-3 justify-center">
                   <button
                     onClick={() => window.location.href = `/poll/results/${createdPollId}`}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
+                    className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium"
                   >
                     Show Responses
                   </button>

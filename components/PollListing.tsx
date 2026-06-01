@@ -62,8 +62,7 @@ export default function PollListing() {
 
   return (
     <div className="min-h-screen py-8" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      backgroundAttachment: 'fixed'
+      background: '#f97316'
     }}>
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border p-8">
@@ -74,7 +73,7 @@ export default function PollListing() {
 
           {isLoading ? (
             <div className="flex flex-col items-center justify-center py-12">
-              <svg className="animate-spin h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <svg className="animate-spin h-8 w-8 text-orange-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
@@ -87,7 +86,7 @@ export default function PollListing() {
               <p className="text-gray-600 mb-6">You haven't created any polls yet. Start by creating your first poll!</p>
               <button
                 onClick={() => window.location.href = '/poll/create'}
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
+                className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium"
               >
                 Create Your First Poll
               </button>
@@ -97,7 +96,7 @@ export default function PollListing() {
               {polls.map((poll, index) => (
                 <div
                   key={poll.id || index}
-                  className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-blue-300 transition-all duration-200"
+                  className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-orange-300 transition-all duration-200"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
@@ -124,7 +123,7 @@ export default function PollListing() {
                   <div className="flex gap-2">
                     <button
                       onClick={() => router.push(`/poll/results/${poll.id}`)}
-                      className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium text-sm"
+                      className="flex-1 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium text-sm"
                     >
                       View Results
                     </button>
@@ -157,7 +156,7 @@ export default function PollListing() {
             <div className="mt-8 pt-6 border-t text-center">
               <button
                 onClick={() => window.location.href = '/poll/create'}
-                className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 font-medium shadow-md hover:shadow-lg"
+                className="px-8 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200 font-medium shadow-md hover:shadow-lg"
               >
                 Create Another Poll
               </button>

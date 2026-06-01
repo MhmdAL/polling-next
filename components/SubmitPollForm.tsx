@@ -90,13 +90,13 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
   if (isLoading) {
     return (
       <div className="min-h-screen py-8" style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border p-8">
             <div className="flex flex-col items-center justify-center py-12">
-              <svg className="animate-spin h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <svg className="animate-spin h-8 w-8 text-orange-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
@@ -111,7 +111,7 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
   if (!poll) {
     return (
       <div className="min-h-screen py-8" style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-4xl mx-auto px-4">
@@ -122,7 +122,7 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
               <p className="text-gray-600 mb-6">The poll you're looking for doesn't exist or has been removed.</p>
               <button
                 onClick={() => window.location.href = '/poll'}
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-medium"
+                className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium"
               >
                 View All Polls
               </button>
@@ -135,8 +135,7 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
 
   return (
     <div className="min-h-screen py-8" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      backgroundAttachment: 'fixed'
+      background: '#f97316'
     }}>
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border p-8">
@@ -158,10 +157,10 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
                   key={option.id || index}
                   className={`relative p-4 rounded-lg border-2 cursor-pointer transition-all ${
                     option.isChecked
-                      ? 'border-blue-500 bg-blue-50'
+                      ? 'border-orange-500 bg-orange-50'
                       : isDisabled
                       ? 'border-gray-200 bg-gray-100 cursor-not-allowed opacity-60'
-                      : 'border-gray-200 bg-white hover:border-blue-300 hover:bg-blue-50'
+                      : 'border-gray-200 bg-white hover:border-orange-300 hover:bg-orange-50'
                   }`}
                   onClick={() => !isDisabled && handleCheckboxChange(index)}
                 >
@@ -171,7 +170,7 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
                       checked={option.isChecked}
                       disabled={isDisabled}
                       onChange={() => handleCheckboxChange(index)}
-                      className="h-5 w-5 text-blue-600 rounded focus:ring-blue-500"
+                      className="h-5 w-5 text-orange-500 rounded focus:ring-orange-500"
                     />
                     <label className="text-gray-900 font-medium cursor-pointer flex-1">
                       {option.name}
@@ -185,7 +184,7 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
           {/* Submit Button */}
           <div className="border-t pt-6">
             <button
-              className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors font-medium text-lg disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors font-medium text-lg disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               onClick={handleSubmitPoll}
               disabled={selectedOptions.length === 0 || isSubmitting}
             >
@@ -209,7 +208,7 @@ export default function SubmitPollForm({ pollId }: {pollId: number}) {
             )}
             
             {selectedOptions.length > 0 && (
-              <p className="text-sm text-green-600 text-center mt-2">
+              <p className="text-sm text-orange-600 text-center mt-2">
                 {selectedOptions.length} option{selectedOptions.length !== 1 ? 's' : ''} selected
               </p>
             )}

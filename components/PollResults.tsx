@@ -73,13 +73,13 @@ export default function PollResults({ pollId }: {pollId: number}) {
   if (isLoading) {
     return (
       <div className="min-h-screen py-8" style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border p-8">
             <div className="flex flex-col items-center justify-center py-12">
-              <svg className="animate-spin h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <svg className="animate-spin h-8 w-8 text-orange-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
@@ -94,7 +94,7 @@ export default function PollResults({ pollId }: {pollId: number}) {
   if (!pollResults?.poll) {
     return (
       <div className="min-h-screen py-8" style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-4xl mx-auto px-4">
@@ -115,8 +115,7 @@ export default function PollResults({ pollId }: {pollId: number}) {
 
   return (
     <div className="min-h-screen py-8" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      backgroundAttachment: 'fixed'
+      background: '#f97316'
     }}>
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border p-8">
@@ -151,7 +150,7 @@ export default function PollResults({ pollId }: {pollId: number}) {
                   key={option.id || index}
                   className={`relative p-4 rounded-lg border-2 transition-all ${
                     isWinning && totalVotes > 0
-                      ? 'border-green-300 bg-green-50'
+                      ? 'border-orange-300 bg-orange-50'
                       : 'border-gray-200 bg-gray-50'
                   }`}
                 >
@@ -159,7 +158,7 @@ export default function PollResults({ pollId }: {pollId: number}) {
                     <h3 className="font-semibold text-gray-900">{option.name}</h3>
                     <div className="flex items-center gap-2">
                       {isWinning && totalVotes > 0 && (
-                        <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       )}
@@ -173,7 +172,7 @@ export default function PollResults({ pollId }: {pollId: number}) {
                   <div className="w-full bg-gray-200 rounded-full h-3">
                     <div
                       className={`h-3 rounded-full transition-all duration-500 ${
-                        isWinning && totalVotes > 0 ? 'bg-green-500' : 'bg-blue-500'
+                        isWinning && totalVotes > 0 ? 'bg-orange-500' : 'bg-orange-300'
                       }`}
                       style={{ width: `${percentage}%` }}
                     ></div>
@@ -193,7 +192,7 @@ export default function PollResults({ pollId }: {pollId: number}) {
                 </code>
                 <button
                   onClick={() => copyToClipboard(`${window.location.origin}/poll/submit/${pollResults?.poll.id}`, 'Poll link')}
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded font-medium transition-colors whitespace-nowrap"
+                  className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded font-medium transition-colors whitespace-nowrap"
                   title="Copy poll link"
                 >
                   Copy Link

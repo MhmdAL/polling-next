@@ -10,7 +10,7 @@ const HomeButton = () => {
 
   return (
     <button 
-      className="fixed top-4 left-4 p-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 cursor-pointer"
+      className="fixed top-4 left-4 p-2 bg-orange-500 text-white rounded-full shadow-md hover:bg-orange-600 cursor-pointer"
       onClick={handleClick}
     >
       Home

@@ -12,8 +12,7 @@ export default function Home() {
   }, []);
   return (
     <div className="min-h-screen" style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      backgroundAttachment: 'fixed'
+      background: '#f97316'
     }}>
       {/* Hero Section */}
       <div className="relative overflow-hidden">
@@ -34,7 +33,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
               <a
                 href="/poll/create"
-                className="px-8 py-4 bg-white text-purple-700 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-white/20 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="px-8 py-4 bg-white text-orange-600 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-white/20 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 {hasCreatedPolls ? 'Create Another Poll' : 'Create Your First Poll'}
               </a>
